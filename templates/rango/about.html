@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-{% load staticfiles %} <!--New line-->
+{% load staticfiles %}
 
 <html>
 
@@ -12,18 +12,13 @@
         <h1>Rango says...</h1>
         <div>
             here is the about page. <br />
-            This tutorial has been put together by Xuefeng Ni.<br />
+            This tutorial has been put together by David Maxwell.<br />
         </div>
-
         <div>
             <a href="/rango/">Index</a><br />
-            <img src="{settings.STATIC_URL}images/rango.jpg" alt="Picture of Rango" />
-            <img src="{{ MEDIA_URL }}cat.jpg" alt = "Picture of a Cat" /> 
+            <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />
+            <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat" />
         </div>
-
-
-            
-
     </body>
-    
+
 </html>
